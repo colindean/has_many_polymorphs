@@ -1,4 +1,5 @@
 require 'active_record'
+require 'has_many_polymorphs/active_record_fix'
 require 'has_many_polymorphs/reflection'
 require 'has_many_polymorphs/association'
 require 'has_many_polymorphs/class_methods'
@@ -7,6 +8,7 @@ require 'has_many_polymorphs/support_methods'
 require 'has_many_polymorphs/base'
 
 class ActiveRecord::Base
+  include HasManyPolymorphs::ActiveRecordFix
   extend ActiveRecord::Associations::PolymorphicClassMethods
 end
 

@@ -3,7 +3,7 @@ lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
-  s.name        = "kronn-has_many_polymorphs"
+  s.name        = "has_many_polymorphs"
   s.version     = "3.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Evan Weaver", "James Stewart", "Matthias Viehweger"]
